@@ -1,0 +1,9 @@
+{
+  "name": "ax-clipper",
+  "description": "This is a simple cropper tool based on mpvue",
+  "version": "0.0.4",
+  "author": "Alexi_Xiang <Alexixyc@outlook.com>",
+  "private": false,
+  "main": "src/index.vue",
+  "module": "src/index.vue.vue"
+}

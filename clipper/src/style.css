@@ -1,0 +1,92 @@
+.clip {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+}
+
+.clip-main {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 110rpx;
+    left: 0;
+    background: #353333;
+}
+
+.clip-mask,
+.clip-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600rpx;
+    height: 600rpx;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.clip-mask {
+    /* 层级最高 */
+    border: 1000rpx solid rgba(70, 67, 67, 0.5);
+    z-index: 3;
+}
+
+.clip-area {
+    /* 层级第二 */
+    z-index: 2;
+}
+
+.clip-area>span {
+    position: absolute;
+    display: block;
+    width: 20rpx;
+    height: 20rpx;
+}
+.t {
+    top: 0;
+    border-top: 2px solid #1AAD19;
+}
+.r {
+    right: 0;
+    border-right: 2px solid #1AAD19;
+}
+.b {
+    bottom: 0;
+    border-bottom: 2px solid #1AAD19;
+}
+.l {
+    left: 0;
+    border-left: 2px solid #1AAD19;
+}
+
+.clip-img {
+    /* 层级最低 */
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-transition: all 0.2 ease-in;
+    transition: all 0.2 ease-in;
+}
+
+.clip-btns {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100rpx;
+    padding-bottom: 10rpx;
+    background: #000000;
+    color: #1AAD19;
+    z-index: 3;
+    font-size: 0;
+    text-align: center;
+}
+
+.clip-btns>span {
+    display: inline-block;
+    line-height: 100rpx;
+    width: 50%;
+    font-size: 28rpx;
+}
